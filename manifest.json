@@ -1,0 +1,12 @@
+{
+  "name": "utasuki-dl",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "background": {
+    "matches": ["https://utasuki.joysound.com/utasuki/*"],
+    "service_worker": "background.js"
+  },
+  "action": {
+	}
+}
