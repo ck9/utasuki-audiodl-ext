@@ -10,7 +10,7 @@ function dlFile() {
     const analysisScore = document.getElementsByTagName("tbody")[0].getElementsByTagName("tr")[0].getElementsByTagName("td")[0].innerText;
     const fileName = musicTitle + " - " + analysisScore + "点.m4a";
     const today = new Date();
-    const dirName = "utasuki-dl/" + today.getFullYear() + (today.getMonth() + 1)  + today.getDate();
+    const dirName = "utasuki-dl/" + today.getFullYear() + ("0" + (dt.getMonth()+1)).slice(-2)  + ("0" + (dt.getDate())).slice(-2);
     console.log(audioURL, fileName, dirName);
     chrome.runtime.sendMessage({
       url: audioURL,
