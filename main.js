@@ -1,5 +1,6 @@
 function dlFile() {
   if (document.getElementsByClassName("analysis-player__controller").length === 0 || document.getElementsByClassName("dl__btn").length > 0) {
+    location.href = "https://utasuki.joysound.com/utasuki/mypage/analysis/?tabName=audio";
     return;
   }
   try {
